@@ -1,0 +1,548 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #2B3947;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.400);
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+.airlines_mini_navbar {
+    min-height: 30px;
+    width: 100%;
+    background-color: #2B3947;
+}
+
+.airlines_mini_navbar .discount_text {
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.airlines_navbar {
+    min-height: 70px;
+    width: 100%;
+    background-color: #232B38;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.airlines_navbar .brand {
+    width: 200px;
+}
+
+.menu_text {
+    font-size: 16px;
+    list-style-type: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu_text:hover {
+    color: #3f95ba;
+}
+
+.select_lang {
+    height: 30px;
+    width: 80px;
+    border: 2px solid #254988;
+    outline: none;
+    color: #fff;
+    background-color: #2B3947;
+}
+
+.non-responsive_menu {
+    min-width:25%;
+    display: flex;
+    justify-content: space-around;
+}
+.show{
+    opacity: 100%;
+}
+
+.menu_bar {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    color: #fff;
+}
+
+.banner {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-image: url(./images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner .booking_area {
+    width: 100%;
+    min-height: 30vh;
+    background-color: #2b39476a;
+    backdrop-filter: blur(2px);
+    border-radius: 5px;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 1rem;
+}
+
+.tripTypeRadio {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.booking_places {
+    height: 60px;
+    width: 35%;
+    display: flex;
+    align-items: center;
+}
+
+.booking_places input {
+    height: 100%;
+    width: 45%;
+    border-radius: 4px;
+    background-color: #fff;
+    outline: none;
+    margin: 0 6px;
+    border: 2px solid #254988;
+}
+
+.booking_places button {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-size: 13px;
+}
+
+.booking_dates {
+    height: 60px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.booking_dates input {
+    height: 100%;
+    width: 45%;
+    border-radius: 4px;
+    background-color: #fff;
+    outline: none;
+    margin: 0 6px;
+    border: 2px solid #254988;  
+}
+
+[type="date"] {
+    font-size: 14px;
+}
+
+.booking_dates button {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-size: 13px;
+}
+
+.further_information {
+    height: 60px;
+    width: 15%;
+    background-color: #fff;
+    border: 2px solid #254988;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.further_information-text1 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.further_information-text2 {
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.flight_search-btn {
+    width: 15%;
+    height: 60px;
+    background-color: #254988;
+    color: #fff;
+    backdrop-filter:blur(10px);
+    border-radius: 5px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.flight_search-btn:hover {
+    background-color: #254988b9;
+    color: #fff;
+}
+.booking_page{
+    width: 100%;
+    min-height: 120vh;
+    background:url(./images/booking.jpg);
+    background-size:cover;
+    padding: 2rem 0;
+}
+.offers{
+    width: 100%;
+    margin: 3rem auto;
+}
+.offer_card{
+    width: 49%;
+    height: 150px;
+    border-radius:15px;
+    background-color: #254988ce;
+    backdrop-filter: blur(3px);
+    color:#fff;
+}
+.flight_name{
+    border: 1px solid #fff;
+    border-radius:10px;
+    list-style-type: none;
+    padding: 1px 8px;
+    font-weight: bold;
+}
+.planes_anime{
+    width: 62%;
+    padding: 10px; 
+    border-bottom:3px dotted;
+}
+.fare_card{
+    width: 24%;
+    height: 65vh;
+    border-radius: 10px;
+    background-color: #254988ce;
+    backdrop-filter: blur(3px);
+    color:#fff;
+    padding: 1.5rem 1rem;
+}
+.fare_card h6{
+    line-height: 15px;
+}
+.fare_card p{
+    font-size: 12px;
+    line-height: 15px;
+    color:rgba(255, 255, 255, 0.600);
+}
+.fare_card .facility{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.477);
+    margin: 1rem 0;
+}
+.fare_card .facility li{
+    display: flex;
+    align-items:center;
+    line-height: 35px;
+}
+.fare_card .facility li span{
+    font-size: 13px;
+}
+.fare_card .fare_price h4,h6{
+    line-height: 15px;
+}
+.fare_btn{
+    width: 95%;
+    height: 50px;
+    border-radius:10px;
+    border:#fff 1px solid;
+    background-color:transparent;
+    color:#fff;
+    transition: all 0.3s ease-in;
+}
+.fare_btn:hover{
+    background-color:#fff;
+    color:#254988ce;
+}
+.loader{
+    position: absolute;
+    width: 100%;
+    min-height: 120vh;
+    background-color:#232b38c8;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.loader img{
+    width: 90px;
+}
+@media only screen and (max-width:992px) {
+    .non-responsive_menu {
+        position: absolute;
+        left: 0;
+        top: 70px;
+        width: 100vw;
+        height: auto;        
+        background-color: #232B38;  
+        padding: 0 1.5rem;
+        z-index:100;
+        opacity: 0;
+        padding: 1rem 0;
+        transition: all 0.2s ease-in;
+    }
+    .show{
+        opacity: 100%;
+    }
+    .banner .booking_area {
+        width: 100%;
+        min-height: 30vh;
+        background-color: #2b39476a;
+        backdrop-filter: blur(2px);
+        border-radius: 5px;
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 1rem 1rem;
+    }   
+    .booking_places {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1rem 0;
+    }
+    .booking_dates {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem 0;
+    }
+    .further_information {
+        height: 50px;
+        width: 48%;
+        margin: 1rem 0px;
+    }
+    .flight_search-btn {
+        width: 48%;
+        height: 50px;
+        margin: 1rem 0;
+    }
+    .airlines_mini_navbar {
+        display: none !important;
+    }
+    .offers{
+        width: 100%;
+        margin: 3rem auto;
+    }
+    .offer_card{
+        width: 100%;
+        height: 165px;
+        margin: 8px 0;
+    }
+    .fare_card{
+        width: 48%;
+        height: 45vh;
+        border-radius: 10px;
+        background-color: #254988ce;
+        backdrop-filter: blur(3px);
+        color:#fff;
+        padding: 1.5rem 1rem;
+        margin: 1rem 0;
+    }
+}
+@media only screen and (max-width:768px) {
+    .non-responsive_menu {
+        position: absolute;
+        left: 0;
+        top: 70px;
+        width: 100vw;
+        height: auto;        
+        background-color: #232B38;  
+        padding: 0 1.5rem;
+        z-index:100;
+        opacity: 0;
+        padding: 1rem 0;
+        transition: all 0.2s ease-in;
+    }
+    .show{
+        opacity: 100%;
+    }
+    .banner .booking_area {
+        width: 100%;
+        min-height: 30vh;
+        background-color: #2b39476a;
+        backdrop-filter: blur(2px);
+        border-radius: 5px;
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 1rem 1rem;
+    }   
+    .booking_places {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem 0;
+    }
+    .booking_dates {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem 0;
+    }
+    .further_information {
+        height: 50px;
+        width: 48%;
+        margin: 1rem 0px;
+    }
+    .flight_search-btn {
+        width: 48%;
+        height: 50px;
+        margin: 1rem 0;
+    }
+    .airlines_mini_navbar {
+        display: none !important;
+    }
+    .offers{
+        width: 100%;
+        margin: 3rem auto;
+    }
+    .offer_card{
+        width: 100%;
+        height: 165px;
+        margin: 5px 0;
+    }
+    .fare_card{
+        width: 48%;
+        height: 50vh;
+        border-radius: 10px;
+        background-color: #254988ce;
+        backdrop-filter: blur(3px);
+        color:#fff;
+        padding: 1.5rem 1rem;
+        margin: 1rem 0;
+    }
+}
+@media only screen and (max-width:500px) {
+    .non-responsive_menu {
+        position: absolute;
+        left: 0;
+        top: 70px;
+        width: 100vw;
+        height: auto;        
+        background-color: #232B38;  
+        padding: 0 1.5rem;
+        z-index:100;
+        opacity: 0;
+        padding: 1rem 0;
+        transition: all 0.2s ease-in;
+    }
+    .non-responsive_menu a{
+        margin: auto 0;
+        font-size: 12px;
+    }
+    .show{
+        opacity: 100%;
+    }
+    .banner {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: start;
+        padding: 1rem 0;
+    }
+    .banner .booking_area {
+        width: 100%;
+        min-height: 30vh;
+        background-color: #2b39476a;
+        backdrop-filter: blur(2px);
+        border-radius: 5px;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 0rem;
+    }   
+    .booking_places {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 1rem 0;
+    }
+    .booking_dates {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 1rem 0;
+    }
+    .further_information {
+        height: 50px;
+        width: 100%;
+        margin: 1rem 6px;
+    }
+    .flight_search-btn {
+        width: 100%;
+        height: 50px;
+        margin: 1rem 0;
+    }
+    .airlines_mini_navbar {
+        display: none !important;
+    }
+    .offers{
+        width: 100%;
+        margin: 3rem auto;
+    }
+    .offer_card{
+        width: 100%;
+        height: 150px;
+        margin: 5px 0;
+    }
+    .fare_card{
+        width: 100%;
+        height: 55vh;
+        border-radius: 10px;
+        background-color: #254988ce;
+        backdrop-filter: blur(3px);
+        color:#fff;
+        padding: 1.5rem 1rem;
+        margin: 1rem 0;
+    }
+}
